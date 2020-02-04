@@ -1,0 +1,32 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: "Times New Roman PSMT"
+	overflow-x: hidden
+	color: $text
+
+header
+	.top-line
+		color: $gold
+
+
+
