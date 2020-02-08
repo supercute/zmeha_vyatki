@@ -45,7 +45,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
-		'app/js/_libs.js', // JS libraries (all in one)
+		'app/libs/slick/slick.min.js', //Slick
+		'app/libs/fancybox/jquery.fancybox.min.js', //fancybox
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -57,7 +58,8 @@ gulp.task('scripts', function() {
 // Responsive Images
 var quality = 95; // Responsive images quality
 
-gulp.task('img',bsReload);
+
+gulp.task('img', bsReload);
 
 // Clean @*x IMG's
 gulp.task('cleanimg', function() {

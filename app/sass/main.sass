@@ -23,10 +23,218 @@ body
 	font-family: "Times New Roman PSMT"
 	overflow-x: hidden
 	color: $text
+	background-color: $bg
 
-header
-	.top-line
-		color: $gold
+.header
+	background-color: $accent
+	min-height: 100vh
+.top-line
+	color: $gold
+	padding-top: 35px
+.logo-wrapper
+	width: 100%
+	text-align: center
+	margin-top: -35px
+.logo
+.info
+	float: right
+.adress
+	img
+		padding-right: 8px
+.mail
+	text-align: right
+.header__title-wrapper
+	text-align: center
+.header__nh
+	margin-bottom: 22px
 
+.header__title
+	text-transform: uppercase
+	font-family: "Times New Roman PSMT"
+	color: $gold
+	font-size: 22px
+	font-weight: 400
+	letter-spacing: 1.1px
+	margin-bottom: 43px
 
+.header__title2
+	color: #ffffff
+	font-size: 33px
+	font-weight: 400
+	text-transform: uppercase
+	letter-spacing: 0.88px
+	margin-bottom: 38px
+.header__desc
+	font-family: "Times New Roman PSMT"
+	font-size: 16px
+	color: #c2a4b3
+	font-weight: 400
+	letter-spacing: 0.5px
+	line-height: 21px
+	margin-bottom: 70px
+.request__button
+	font-family: "Times New Roman PS - Bold MT"
+	color: #ffffff
+	font-size: 20px
+	font-weight: 400
+	line-height: 21px
+	padding: 23px 25px
+	box-shadow: 5px 11px 27px rgba(0, 0, 0, 0.2)
+	background-color: #b56666
+	border-radius: 10px
+	&:hover
+		color: #ffffff
+		text-decoration: none
 
+.section-title__wrapper
+	text-align: center
+	margin-top: 80px
+.section-title__img
+	margin-bottom: 15px
+.section-title
+	font-family: "Times New Roman PS"
+	font-weight: bold
+	line-height: 21px
+	font-size: 26px
+	margin-bottom: 30px
+	text-transform: uppercase
+
+.section-title__desc
+	font-family: "Times New Roman PSMT"
+	line-height: 25px
+	margin-bottom: 85px
+.adv
+.adv__item
+	text-align: center
+.adv__img
+	margin-bottom: 20px
+.adv__title
+	text-transform: uppercase
+	font-size: 18px
+	font-family: "Times New Roman PS"
+	font-weight: bold
+	line-height: 21px
+	margin-bottom: 25px
+.adv__desc
+	font-family: "Times New Roman PSMT"
+.gallery__item
+	height: 555px
+	margin-bottom: 30px
+.gallery__item-hover
+	height: 555px
+	&:hover
+		background-color: #6c2546
+		opacity: 0.85
+		height: 100%
+		.gallery__content
+			visibility: visible
+			opacity: 1
+.gallery__content
+	text-align: center
+	position: absolute
+	bottom: 0
+	width: 100%
+	height: 20%
+	visibility: hidden
+	opacity: 0
+	transition: visibility 0s, opacity 0.5s linear
+.gallery__nh	
+	margin-bottom: 15px
+.gallery__name
+	font-family: "Times New Roman PSMT"
+	line-height: 25px
+	color: #ffffff
+section.again
+	background-color: $accent
+	.section-title__wrapper
+		color: #ffffff
+		padding-top: 80px
+.approach
+.approach__title, .reviews__title
+	text-transform: uppercase
+	color: $gold
+	line-height: 21px
+	font-family: "Times New Roman PS"
+	font-weight: bold
+	margin-bottom: 30px
+.approach__item
+	float: left
+	margin-bottom: 40px
+.approach__num
+	float: left
+	border-radius: 100%
+	background-color: #c2a4b3
+	font-family: "Times New Roman PSMT"
+	font-weight: 400
+	font-size: 23px
+	padding: 5px 16px
+	margin-right: 10px
+.approach__desc
+	color: #c2a4b3
+.reviews
+	margin-bottom: 200px
+.reviews__title
+	text-align: center
+.reviews-slider
+	width: 200px
+	margin-left: 30%
+.reviews-slider__item
+.reviews-slider__img
+.arrow-next
+	position: absolute
+	top: 45%
+	right: -70px
+.arrow-prev
+	position: absolute
+	top: 45%
+	left: -70px
+section.details
+	padding-bottom: 80px
+	.adv__img
+		margin-left: 30px
+		border: 13px solid #a3858d
+		border-radius: 100%
+		height: 200px
+		width: 200px
+		background-position: center
+		background-size: cover
+		&:last-of-type
+			border: 0
+			border-radius: 0
+			margin-left: 0
+	.adv__math
+		position: absolute
+		font-size: 60px
+		font-weight: bold
+		right: -15px
+		top: 15%
+section.request
+	background-image: url(../img/street-bg.png)
+	background-size: cover
+	background-position: center
+	height: 90vh
+.request__wrapper
+	text-align: center
+	margin-top: 30vh
+.request__title
+	font-size: 38px
+	font-family: "Times New Roman PS - Bold MT"
+	font-weight: bold
+	color: #ffffff
+	text-transform: uppercase
+	margin-bottom: 45px
+.request__desc
+	font-family: "Times New Roman PSMT"
+	font-size: 28px
+	color: #d2b4b4
+	font-weight: 400
+	line-height: 21px
+	margin-bottom: 70px
+section.client-map
+	.map
+		margin-bottom: 80px
+.footer
+	background-color: $accent
+.bottom-line
+	color: $gold
+	padding-top: 35px
