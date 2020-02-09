@@ -28,6 +28,8 @@ body
 .header
 	background-color: $accent
 	min-height: 100vh
+	.girl-bg
+		height: 80vh
 .top-line
 	color: $gold
 	padding-top: 35px
@@ -145,10 +147,15 @@ body
 	line-height: 25px
 	color: #ffffff
 section.again
+	.svg-top
+		transform: rotate(180deg)
+	.svg-bottom
+		transform: scaleX(-1)
 	background-color: $accent
 	.section-title__wrapper
 		color: #ffffff
-		padding-top: 80px
+		// padding-top: 80px
+		margin-top: 0
 .approach
 .approach__title, .reviews__title
 	text-transform: uppercase
@@ -172,7 +179,7 @@ section.again
 .approach__desc
 	color: #c2a4b3
 .reviews
-	margin-bottom: 200px
+	// margin-bottom: 200px
 .reviews__title
 	text-align: center
 .reviews-slider
@@ -209,13 +216,17 @@ section.details
 		right: -15px
 		top: 15%
 section.request
+	.svg-top
+		transform: rotate(180deg) scaleX(-1)
+	.svg-bottom
 	background-image: url(../img/street-bg.png)
 	background-size: cover
 	background-position: center
-	height: 90vh
+	height: 690px
 .request__wrapper
 	text-align: center
-	margin-top: 30vh
+	margin-top: 80px
+	margin-bottom: 80px
 .request__title
 	font-size: 38px
 	font-family: "Times New Roman PS - Bold MT"
@@ -230,6 +241,7 @@ section.request
 	font-weight: 400
 	line-height: 21px
 	margin-bottom: 70px
+	
 section.client-map
 	.map
 		margin-bottom: 80px
@@ -238,3 +250,5 @@ section.client-map
 .bottom-line
 	color: $gold
 	padding-top: 35px
+
+@media and 	
