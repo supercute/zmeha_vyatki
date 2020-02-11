@@ -1,0 +1,20 @@
+
+on: push
+name: FTP DEPLOY
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: p401826.ftp.ihc.ru
+        FTP_USERNAME: p401826_zv
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        METHOD: ftp
+        PORT: 21
+        LOCAL_DIR: app
+        ARGS: --delete
+        # --delete arg will delete files on the server if you've deleted them in git
