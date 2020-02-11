@@ -1,4 +1,3 @@
-
 on: push
 name: FTP DEPLOY
 jobs:
