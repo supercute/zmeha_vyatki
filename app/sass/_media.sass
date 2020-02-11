@@ -1,5 +1,9 @@
 @import "vars"
 
+@media only screen and (min-width: 1900px)
+	.header
+		.girl-bg
+			height: 90vh
 // ≥1200px
 +media-breakpoint-down(lg)
 
@@ -34,7 +38,7 @@
 			top: 78%
 			right: 0
 	.logo-wrapper
-		display: none
+		// display: none
 	.info
 		margin-bottom: 10px
 		text-align: center
@@ -57,9 +61,11 @@
 			left: -50px
 	
 	section.request
+		background-image: url(../img/street-bg.png)
 		.request__title
 			font-size: 36px
 		.request__wrapper
 			margin-top: 140px
+
 // ≥576px
 +media-breakpoint-down(xs)
